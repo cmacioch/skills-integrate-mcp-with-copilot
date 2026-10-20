@@ -5,6 +5,9 @@ A super simple FastAPI application that allows students to view and sign up for 
 ## Features
 
 - View all available extracurricular activities
+- Search activities by name, description, or schedule
+- Filter activities by category
+- Sort activities by name or start time
 - Sign up for activities
 
 ## Getting Started
@@ -39,7 +42,9 @@ The application uses a simple data model with meaningful identifiers:
 1. **Activities** - Uses activity name as identifier:
 
    - Description
+   - Category
    - Schedule
+   - Start time in 24-hour `HH:MM` format for sorting
    - Maximum number of participants allowed
    - List of student emails who are signed up
 
